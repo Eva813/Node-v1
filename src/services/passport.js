@@ -1,11 +1,7 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-// const keys = require('../config/keys.js');
-const path = require('path');
-const keysPath = path.resolve(__dirname, '../config/keys.js');
-console.log('keys.js Absolute Path:', keysPath);
-const keys = require(keysPath);
-console.log('keys', keys);
+const keys = require('../config/keys');
+
 
 passport.use(new GoogleStrategy({
   clientID: keys.googleClientId,
