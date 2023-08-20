@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 require('./services/passport');
-//require('./routes/authRoutes') 會回傳函式，再加入app參數，直接呼叫
+//require('./routes/authRoutes') 會回傳函式，再加入app參數，直接呼
 require('./routes/authRoutes')(app);
 
 app.get('/', (req, res) => {
