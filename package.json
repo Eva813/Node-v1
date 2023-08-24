@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "build": "npm install; npm run build"
+    "build": "npm run build:prod",
+    "build:prod": "npm install && echo Build complete"
   },
   "author": "",
   "license": "ISC",
